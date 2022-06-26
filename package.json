@@ -1,0 +1,12 @@
+{
+  "name": "zkwallt-docs",
+  "version": "1.0.0",
+  "description": "zkWaller is a smart contract wallet using zk-SNARKS to restore a user's access to their smart contract wallet, without revealing any information of the user's and guardians.",
+  "repository": "https://github.com/zkWallet/zkWallet-docs",
+  "author": "IaM <DEVELOPER>",
+  "license": "Apache License 2.0",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^5.1.4"
+  }
+}

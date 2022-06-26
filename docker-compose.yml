@@ -1,0 +1,49 @@
+version: "3.7"
+
+services:
+  guardian-ui:
+    image: docker.simplicy.io/guardian-ui:main
+    networks:
+      - guardian-network
+    deploy:
+      restart_policy:
+        condition: on-failure
+    environment:
+
+  guardian-service:
+    image: docker.simplicy.io/guardian-service:main
+    networks:
+      - guardian-network
+      - mongodb-network
+      - traefik-public
+    environment:
+      - NODE_ENV=${NODE_ENV}
+      - JWKS_ENDPOINT=${JWKS_ENDPOINT}
+      - DB_HOST=${DB_HOST}
+      - DB_NAME=${DB_NAME}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD={DB_PASSWORD}
+      - MONGO_URI_PREFIX=mongodb
+    deploy:
+      restart_policy:
+        condition: on-failure
+      labels:
+        - "traefik.enable=true"
+        - "traefik.docker.network=traefik-public"
+        - "traefik.constraint-label=traefik-public"
+        - "traefik.http.routers.guardian-service.rule=Host(`${WALLET_DOMAIN}`)"
+        - "traefik.http.routers.guardian-service.entrypoints=http"
+        - "traefik.http.routers.guardian-service.middlewares=https-redirect"
+        - "traefik.http.routers.guardian-service-https.rule=Host(`${WALLET_DOMAIN}`)"
+        - "traefik.http.routers.guardian-service-https.entrypoints=https"
+        - "traefik.http.routers.guardian-service-https.tls=true"
+        - "traefik.http.routers.guardian-service-https.tls.certresolver=le"
+        - "traefik.http.services.guardian-service.loadbalancer.server.port=8100"
+
+networks:
+  traefik-public:
+    external: true
+  mongodb-network:
+    external: true
+  guardian-network:
+    external: true
