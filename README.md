@@ -19,7 +19,7 @@ Guardian Recovery Link:
 <https://guardian.simplicy.io/>
 
 zkWallet Demo Video:
-<https://youtu.be/q4p469i5yJM>
+<https://youtu.be/u2cMV73a3lY>
 
 ## Table of Contents <!-- omit in toc -->
 
