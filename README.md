@@ -10,11 +10,16 @@ zkWallet Link:
 
 <https://zkwallet.simplicy.io/>
 
-Guardian Link:
+Guardian Registration Link:
 
-<https://guardian.simplicy.io>
+<https://guardian.simplicy.io/registration>
+
+Guardian Recovery Link:
+
+<https://guardian.simplicy.io/>
 
 zkWallet Demo Video:
+<https://youtu.be/q4p469i5yJM>
 
 ## Table of Contents <!-- omit in toc -->
 
@@ -222,6 +227,11 @@ The following graphic shows the structure of the most important zero knowledge e
 │   │   │   │   │   ├── Constant.sol
 │   │   │   │   ├── verifier
 │   │   │   │   │   ├── Verifier20.sol
+├── packages
+│   ├── guardian-ui
+│   │   ├── public
+│   │   │   ├── semaphore.wasm
+│   │   │   ├── semaphore_final.zkey
 ```
 
 To see the full directory structure of the smart contracts, see [README file](/packages/zkWallet-contracts/contracts/README.md) inside the `contracts` folder.
@@ -309,37 +319,37 @@ Then, follow the intructions in the [README file](/packages/guardian-ui/README.m
 
  Name                   | Harmony One Devnet                              | Version | Status   |
 | :---                  | :---                                            |  :---   | :---     |
-| Alice Wallet          | 0xc0355786e16524c45D2d3289ba6F458698DA7a5F      | 0.0.1   |          |
-| Bob Wallet            | 0xeAC6f23609562256F16884886341cEEA7a926639      | 0.0.1   |          |
-| Verifier16            | 0x083409136b251DC1A8c47958874C80197424dFdF      | 1.0.0   | verified |
-| Verifier17            | 0xe3E689D1cb070713C88A18C3A13f266B4fD58778      | 1.0.0   | verified |
-| Verifier18            | 0x727C8e95D76Feef514c1AF34d4CDAE61266FC2Ba      | 1.0.0   | verified |
-| Verifier19            | 0x1c0966796C46C8e4230B9f4D1Fe151Efa1eB75fD      | 1.0.0   | verified |
-| Verifier20            | 0x6a8DC73b21AE2A517BD3CFcf53CE32c89566BB6f      | 1.0.0   | verified |
-| Verifier21            | 0x9b28bED203EDd813d6D278FC8AF9743CEeB081A0      | 1.0.0   | verified |
-| Verifier22            | 0xb1a9662b07263CB7419eBa90fA7cF835ee686965      | 1.0.0   | verified |
-| Verifier23            | 0x1CB9e127D7f25C2dE99de822B72B47da85a3D37E      | 1.0.0   | verified |
-| Verifier24            | 0xf6CBd386fAE126414Ac3eAD9b6419Ed620f17446      | 1.0.0   | verified |
-| Verifier25            | 0xc241533F9D0F9DEC506d5D8da68C430BAFd26e5A      | 1.0.0   | verified |
-| Verifier26            | 0x0D47a2Ca986fCCAFCe7b93178383c64855241704      | 1.0.0   | verified |
-| Verifier27            | 0x17aBCcd552D3D026dCfDA1BB1E3F4C107Fcb288b      | 1.0.0   | verified |
-| Verifier28            | 0xE1F42c534828d93B31f21657F0bfe48C879A1107      | 1.0.0   | verified |
-| Verifier29            | 0x38f81B60CAd3BD9eaE067Db896f315246f95D948      | 1.0.0   | verified |
-| Verifier30            | 0x121Bd49eE3aa9Ad46E5C2e1Ac709Bd74969A04F3      | 1.0.0   | verified |
-| Verifier31            | 0x6Dc6AC6320AA8af453648B09007b8F121fdD13E7      | 1.0.0   | verified |
-| Verifier32            | 0xF9328111a2C3d81A581A18c4061Dd7DC27127A8a      | 1.0.0   | verified |
-| PoseidonT3            | 0x07AfCA0456B59962588006a10895A15bCb751C71      | 1.0.0   |          |
-| ERC20Facet            | 0xaC71914E2A22f92d3F75106043aA4E7248Eda9C3      | 0.0.1   |          |
-| ERC721Facet           | 0x4FEbbDE06b713Ecb9829b771d3dc18bD1F9DcbBE      | 0.0.1   |          |
-| GuardianFacet         | 0xb5EAa5bA96DDab615d887aF331cc78D34B6AA353      | 0.0.1   |          |
-| RecoveryFacet         | 0x1A51d1C41be8a8A8F3092C65Ca0c3a0777a65f06      | 0.0.1   |          |
-| SemaphoreFacet        | 0x532E815c80198b78512858F4cf125be4858c5e9A      | 0.0.1   |          |
-| SemaphoreGroupsFacet  | 0x0c2B1dD90cba0cAf2777bE41f91a8Ac45B0e185c      | 0.0.1   |          |
-| SemaphoreVotingFacet  | 0x5a6A9c1412179ef061CDF328E6b66BB8c5F337B6      | 0.0.1   |          |
-| SimplicyWalletDiamond | 0x93Fb183E6aFcf5193CDdc3bB5dA1b511a9909dc6      | 0.0.1   |          |
-| WalletFactoryDiamond  | 0xB51049AffFA9C2DF44654BACC65A9aF45013a027      | 0.0.1   |          |
-| WalletFactoryFacet    | 0xF7A90fa8450b79F2727c5709Cc4Da4f1C03cA55e      | 0.0.1   |          |
-| SimplicyWalletDiamond | 0x8BeFc64AA83f6a822376D2fEd3BF928d870264Fb      | 0.0.1   |          |
+| Alice Wallet          | 0xf398d338297aF005e8Af3eA6aAfcAeBd4d5038A1      | 0.0.1   |          |
+| Bob Wallet            | 0xd6c82C755368F56693fC7a5b11Bd9f6ae3619211      | 0.0.1   |          |
+| Verifier16            | 0x8d2171b7dDC7F6B0f04657835a6b19F04B821353      | 1.0.0   | verified |
+| Verifier17            | 0x64D87dC944Fb6956Ff09b4a1da2BfBFf4F78f976      | 1.0.0   | verified |
+| Verifier18            | 0xa8007c877333508A07eA9f16CF2a2415057Ec0BC      | 1.0.0   | verified |
+| Verifier19            | 0x434a85Da614E439929e7480464B18c1cea043B19      | 1.0.0   | verified |
+| Verifier20            | 0x21176AA38497bdeab3CdB4368CFF53c428B001f7      | 1.0.0   | verified |
+| Verifier21            | 0x48164EcB1CB426C72DCE0421F4426daE264724a7      | 1.0.0   | verified |
+| Verifier22            | 0x50c3B09c4b478bd88D0ED14B056AcaFb679Bd345      | 1.0.0   | verified |
+| Verifier23            | 0xbDc6e16F514e8d8098ABc90Ab40482d5CbD7c9Aa      | 1.0.0   | verified |
+| Verifier24            | 0x6c3Ebf4d06e9595248fA7cc506ad87CffE445dee      | 1.0.0   | verified |
+| Verifier25            | 0x6fCe423A2fDDe6788a27a99b59e0Cb40579CE988      | 1.0.0   | verified |
+| Verifier26            | 0xCD81D914F1032F7d4c4AB088546c7d70A438cFC3      | 1.0.0   | verified |
+| Verifier27            | 0x9eE3cC20Eb1e6a695192A9EDB0512694d31d81bf      | 1.0.0   | verified |
+| Verifier28            | 0x18145aa8e5eb71959EaAC9Be2B383A070E80300A      | 1.0.0   | verified |
+| Verifier29            | 0x5a6A9c1412179ef061CDF328E6b66BB8c5F337B6      | 1.0.0   | verified |
+| Verifier30            | 0x532E815c80198b78512858F4cf125be4858c5e9A      | 1.0.0   | verified |
+| Verifier31            | 0xf3a727DFC9eC0ca43934Aa5c9424EeB040C9Fb7c      | 1.0.0   | verified |
+| Verifier32            | 0xaA048F0280d8F8B72f6E0Ed3D17E91ba1d1a8387      | 1.0.0   | verified |
+| PoseidonT3            | 0x1fB6C0Cc4b846a4A25B41f3AAD59b4C719474E3F      | 1.0.0   |          |
+| CountersFacet         | 0x02C1384694653D88919a1eF6EB8d3906a731640b      | 0.0.1   |          |
+| ERC20Facet            | 0x5BA6985e2F04cA4Ef362dCFF0Ac793E1715F2E10      | 0.0.1   |          |
+| ERC721Facet           | 0xEA33dC1D03A626C899dfA6bD9BA61AcEce886AF1      | 0.0.1   |          |
+| GuardianFacet         | 0x3d4370D915c52E801963533E0aC54EAF4a57177b      | 0.0.1   |          |
+| RecoveryFacet         | 0xC509433465D6e3b60CA192e81659BBEDffE7fd3b      | 0.0.1   |          |
+| SemaphoreFacet        | 0xF6f822A0aaE0CDd6dDb6c0BA7284a74B006A0824      | 0.0.1   |          |
+| SemaphoreGroupsFacet  | 0x7bA44FAF27B18d04Af0950f30617B5AAACceC038      | 0.0.1   |          |
+| SemaphoreVotingFacet  | 0x43133D828f1E4c209eB60B4fEbD01221C72E4Ca4      | 0.0.1   |          |
+| SimplicyWalletDiamond | 0x2338c67c687F3d6A28C27Df15325F06A6BF1C627      | 0.0.1   |          |
+| WalletFactoryDiamond  | 0xb9853e45b3537975035159ece4E9F53EC18480Fd      | 0.0.1   |          |
+| WalletFactoryFacet    | 0x58aD3eEFB1832ef971CDe8e45A7239E7dd8f9444      | 0.0.1   |          |
 
 <a name="deployed-testet"/>
 
