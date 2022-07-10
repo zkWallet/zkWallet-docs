@@ -19,7 +19,7 @@ Guardian Recovery Link:
 <https://guardian.simplicy.io/>
 
 zkWallet Demo Video:
-<https://youtu.be/u2cMV73a3lY>
+<https://youtu.be/dmwbmxZyMyY>
 
 ## Table of Contents <!-- omit in toc -->
 
@@ -47,8 +47,9 @@ zkWallet Demo Video:
   - [Run Guardian UI](#run-guardian-ui)
   - [Run Wallet UI](#run-wallet-ui)
 - [Deployed contracts](#deployed-contracts)
+  - [Polygon](#deployed-polygon)
+  - [Polygon](#deployed-optimism)
   - [Devnet](#deployed-devnet)
-  - [Testnet](#deployed-testnet)
 
 ## Background
 
@@ -313,77 +314,74 @@ Then, follow the intructions in the [README file](/packages/guardian-ui/README.m
 
 ## Deployed contracts
 
+<a name="deployed-polygon"/>
+
+### Polygon Mainnet
+
+ Name                     | Harmony One Devnet                              | Version       | Status   |
+| :---                    | :---                                            |  :---         | :---     |
+| Verifier20              | 0x8D4d6E93a68a47ED4aD2C81635C3A7D21fb9077B      | 1.0.0         | verified |
+| PoseidonT3              | 0xa78bc68617ab5556b6A3DEf92f515B559E410Ac8      | 1.0.0         |          |
+| ERC20ServiceFacet       | 0xbC8FA821717f7e200b89305c1299534968A97460      | 0.1.0.alpha   | verified |
+| ERC721ServiceFacet      | 0xFf0fc78e425c966E93b1B01361508B895431F37C      | 0.1.0.alpha   | verified |
+| GuardianFacet           | 0x5182a1ae86a294e4DafE1f3B74BE577399a0a958      | 0.1.0.alpha   | verified |
+| RecoveryFacet           | 0x5448Fe62Eb288C1f7e99172E3576b9767749b91F      | 0.1.0.alpha   | verified |
+| EtherServiceFacet       | 0x595dF113b9fA0491E41e3fb4c7872bD607f8796a      | 0.1.0.alpha   | verified |
+| SemaphoreFacet          | 0x8574ebd614dc65F5d1D5A3b26565B67943756194      | 0.1.0.alpha   | verified |
+| SemaphoreGroupsFacet    | 0xc6b07957868bf4b8d4dAeC437e774D90699697C0      | 0.1.0.alpha   | verified |
+| ZkWalletFactoryDiamond  | 0x7Cbe3DB16C1e29e2394B3D8EB190bB72Da9A098C      | 0.1.0.alpha   | verified |
+| WalletFactoryFacet      | 0x23C6B32032b697903c2cF29F3513Fa6c6b44E69D      | 0.1.0.alpha   | verified |
+
+<a name="deployed-optimism"/>
+
+### Optimism Mainnet
+
+ Name                     | Harmony One Devnet                              | Version       | Status   |
+| :---                    | :---                                            |  :---         | :---     |
+| Verifier20              | 0x8D4d6E93a68a47ED4aD2C81635C3A7D21fb9077B      | 1.0.0         | verified |
+| PoseidonT3              | 0xa78bc68617ab5556b6A3DEf92f515B559E410Ac8      | 1.0.0         |          |
+| ERC20ServiceFacet       | 0xbC8FA821717f7e200b89305c1299534968A97460      | 0.1.0.alpha   | verified |
+| ERC721ServiceFacet      | 0xFf0fc78e425c966E93b1B01361508B895431F37C      | 0.1.0.alpha   | verified |
+| GuardianFacet           | 0x5182a1ae86a294e4DafE1f3B74BE577399a0a958      | 0.1.0.alpha   | verified |
+| RecoveryFacet           | 0x5448Fe62Eb288C1f7e99172E3576b9767749b91F      | 0.1.0.alpha   | verified |
+| EtherServiceFacet       | 0x595dF113b9fA0491E41e3fb4c7872bD607f8796a      | 0.1.0.alpha   | verified |
+| SemaphoreFacet          | 0x8574ebd614dc65F5d1D5A3b26565B67943756194      | 0.1.0.alpha   | verified |
+| SemaphoreGroupsFacet    | 0xc6b07957868bf4b8d4dAeC437e774D90699697C0      | 0.1.0.alpha   | verified |
+| ZkWalletFactoryDiamond  | 0x7Cbe3DB16C1e29e2394B3D8EB190bB72Da9A098C      | 0.1.0.alpha   | verified |
+| WalletFactoryFacet      | 0x23C6B32032b697903c2cF29F3513Fa6c6b44E69D      | 0.1.0.alpha   | verified |
+
 <a name="deployed-devnet"/>
 
 ### Devnet
 
- Name                   | Harmony One Devnet                              | Version | Status   |
-| :---                  | :---                                            |  :---   | :---     |
-| Alice Wallet          | 0xf398d338297aF005e8Af3eA6aAfcAeBd4d5038A1      | 0.0.1   |          |
-| Bob Wallet            | 0xd6c82C755368F56693fC7a5b11Bd9f6ae3619211      | 0.0.1   |          |
-| Verifier16            | 0x8d2171b7dDC7F6B0f04657835a6b19F04B821353      | 1.0.0   | verified |
-| Verifier17            | 0x64D87dC944Fb6956Ff09b4a1da2BfBFf4F78f976      | 1.0.0   | verified |
-| Verifier18            | 0xa8007c877333508A07eA9f16CF2a2415057Ec0BC      | 1.0.0   | verified |
-| Verifier19            | 0x434a85Da614E439929e7480464B18c1cea043B19      | 1.0.0   | verified |
-| Verifier20            | 0x21176AA38497bdeab3CdB4368CFF53c428B001f7      | 1.0.0   | verified |
-| Verifier21            | 0x48164EcB1CB426C72DCE0421F4426daE264724a7      | 1.0.0   | verified |
-| Verifier22            | 0x50c3B09c4b478bd88D0ED14B056AcaFb679Bd345      | 1.0.0   | verified |
-| Verifier23            | 0xbDc6e16F514e8d8098ABc90Ab40482d5CbD7c9Aa      | 1.0.0   | verified |
-| Verifier24            | 0x6c3Ebf4d06e9595248fA7cc506ad87CffE445dee      | 1.0.0   | verified |
-| Verifier25            | 0x6fCe423A2fDDe6788a27a99b59e0Cb40579CE988      | 1.0.0   | verified |
-| Verifier26            | 0xCD81D914F1032F7d4c4AB088546c7d70A438cFC3      | 1.0.0   | verified |
-| Verifier27            | 0x9eE3cC20Eb1e6a695192A9EDB0512694d31d81bf      | 1.0.0   | verified |
-| Verifier28            | 0x18145aa8e5eb71959EaAC9Be2B383A070E80300A      | 1.0.0   | verified |
-| Verifier29            | 0x5a6A9c1412179ef061CDF328E6b66BB8c5F337B6      | 1.0.0   | verified |
-| Verifier30            | 0x532E815c80198b78512858F4cf125be4858c5e9A      | 1.0.0   | verified |
-| Verifier31            | 0xf3a727DFC9eC0ca43934Aa5c9424EeB040C9Fb7c      | 1.0.0   | verified |
-| Verifier32            | 0xaA048F0280d8F8B72f6E0Ed3D17E91ba1d1a8387      | 1.0.0   | verified |
-| PoseidonT3            | 0x1fB6C0Cc4b846a4A25B41f3AAD59b4C719474E3F      | 1.0.0   |          |
-| CountersFacet         | 0x02C1384694653D88919a1eF6EB8d3906a731640b      | 0.0.1   |          |
-| ERC20Facet            | 0x5BA6985e2F04cA4Ef362dCFF0Ac793E1715F2E10      | 0.0.1   |          |
-| ERC721Facet           | 0xEA33dC1D03A626C899dfA6bD9BA61AcEce886AF1      | 0.0.1   |          |
-| GuardianFacet         | 0x3d4370D915c52E801963533E0aC54EAF4a57177b      | 0.0.1   |          |
-| RecoveryFacet         | 0xC509433465D6e3b60CA192e81659BBEDffE7fd3b      | 0.0.1   |          |
-| SemaphoreFacet        | 0xF6f822A0aaE0CDd6dDb6c0BA7284a74B006A0824      | 0.0.1   |          |
-| SemaphoreGroupsFacet  | 0x7bA44FAF27B18d04Af0950f30617B5AAACceC038      | 0.0.1   |          |
-| SemaphoreVotingFacet  | 0x43133D828f1E4c209eB60B4fEbD01221C72E4Ca4      | 0.0.1   |          |
-| SimplicyWalletDiamond | 0x2338c67c687F3d6A28C27Df15325F06A6BF1C627      | 0.0.1   |          |
-| WalletFactoryDiamond  | 0xb9853e45b3537975035159ece4E9F53EC18480Fd      | 0.0.1   |          |
-| WalletFactoryFacet    | 0x58aD3eEFB1832ef971CDe8e45A7239E7dd8f9444      | 0.0.1   |          |
+ Name                     | Harmony One Devnet                              | Version       | Status   |
+| :---                    | :---                                            |  :---         | :---     |
+| Alice Wallet            | 0x2FBf87AFCD35c291441Bc1dA23dabdbDB77b2100      | 0.1.0.alpha   |          |
+| Verifier16              | 0xDF84B7D104276bE843a81FA0e7Ce4e7e1F73CA7E      | 1.0.0         | verified |
+| Verifier17              | 0x79c905Ce62b38100C2eA7C5A40836960d56f7420      | 1.0.0         | verified |
+| Verifier18              | 0x298DeD46C68639Bbe9b9CbDFEb63Aa82EcDE75Aa      | 1.0.0         | verified |
+| Verifier19              | 0x27C673cdcD056FBb93F701438aab771d3C00634e      | 1.0.0         | verified |
+| Verifier20              | 0x4c469d74a65BCfBA0D9500457Cc76Daff220098a      | 1.0.0         | verified |
+| Verifier21              | 0xbFeB824187A9E046cA37264e234E987f5CFE10F8      | 1.0.0         | verified |
+| Verifier22              | 0x08cbB7504E4227D4BfaE9B50f765dFe5404CDE8a      | 1.0.0         | verified |
+| Verifier23              | 0xdCa536459b8eFc88cDD8e6d84a080694a687E3C2      | 1.0.0         | verified |
+| Verifier24              | 0xA8C8255D0565eD61bf9ED024fA6Ec796764B9D26      | 1.0.0         | verified |
+| Verifier25              | 0xAfacB48B9cdB93BadFe8Baae0543F4BD95460739      | 1.0.0         | verified |
+| Verifier26              | 0xf6Df4abe7e909789326E4c023Ecf33D1108FF601      | 1.0.0         | verified |
+| Verifier27              | 0xe5d7529917041ab3Bd2e67EAD06B54CD04b13aD3      | 1.0.0         | verified |
+| Verifier28              | 0x2E4ea96cbF43BF4BBb699214eA988f28F17F3fF3      | 1.0.0         | verified |
+| Verifier29              | 0x7445b0B183b5a74104fcF1A8fE70F9518c0D4605      | 1.0.0         | verified |
+| Verifier30              | 0xD37b6C9Bd8dC97F7021856154D9773e3Df43995C      | 1.0.0         | verified |
+| Verifier31              | 0x541252940a7F2e0b4E0Ab38737c9376c931a66C6      | 1.0.0         | verified |
+| Verifier32              | 0xe0925FEf5F260b40bb64aDd86DFBFE7Da76B007F      | 1.0.0         | verified |
+| PoseidonT3              | 0x56924BaA61e1F121218282336156Cc170c41B051      | 1.0.0         | verified |
+| ERC20ServiceFacet       | 0x18b61b36FC991c095765Ed2c1D04E0875cDc21ac      | 0.1.0.alpha   |          |
+| ERC721ServiceFacet      | 0x5A8215DDfcC356c9526499818eAd868ba4B9422C      | 0.1.0.alpha   |          |
+| GuardianFacet           | 0x13522F1f4968BD85cDE1294536774430551518dB      | 0.1.0.alpha   |          |
+| RecoveryFacet           | 0x8d9CB131635555E812418354648c1B645796031a      | 0.1.0.alpha   |          |
+| EtherServiceFacet       | 0x40A94B5B3C1A3fb8D1F0FEA8F38FC6d69AE1161e      | 0.1.0.alpha   |          |
+| SemaphoreFacet          | 0xe198d7010AfF9ADA90E349F69481Ad96856ee05b      | 0.1.0.alpha   |          |
+| SemaphoreGroupsFacet    | 0x20Aea34C2441539D5A2497f2DF98bB93575c18ac      | 0.1.0.alpha   |          |
+| ZkWalletFactoryDiamond  | 0xF64a874474EFAe562B3Ccec0d081C64b862696ed      | 0.1.0.alpha   |          |
+| WalletFactoryFacet      | 0x878821Ef4f0F3Ab6e39bb342218C7497d9523cd1      | 0.1.0.alpha   |          |
 
-<a name="deployed-testet"/>
-
-### Testnet
-
- Name                   | Harmony One Testnet                             | Version |
-| :---                  | :---                                            |  :---   |
-| Alice Wallet          |                                                 | 0.0.1   |
-| Bob Wallet            |                                                 | 0.0.1   |
-| Verifier16            | 0xEC4b5d3cB604D4771473F9E58394A45619C38BB2      | 1.0.0   |
-| Verifier17            | 0x9BBCD95F0D06C6ff992E2baC305cC7C004101214      | 1.0.0   |
-| Verifier18            | 0x4cEcE384bCB377EB7a3d39449a96478f5fa5fa72      | 1.0.0   |
-| Verifier19            | 0x9671cBE0C930DC94085118dB0197e861abF74e02      | 1.0.0   |
-| Verifier20            | 0x01F5C5E69AC1bcBC41Cef0a90A43A8e5A79cFb69      | 1.0.0   |
-| Verifier21            | 0x8d2171b7dDC7F6B0f04657835a6b19F04B821353      | 1.0.0   |
-| Verifier22            | 0x64D87dC944Fb6956Ff09b4a1da2BfBFf4F78f976      | 1.0.0   |
-| Verifier23            | 0xa8007c877333508A07eA9f16CF2a2415057Ec0BC      | 1.0.0   |
-| Verifier24            | 0x434a85Da614E439929e7480464B18c1cea043B19      | 1.0.0   |
-| Verifier25            | 0x21176AA38497bdeab3CdB4368CFF53c428B001f7      | 1.0.0   |
-| Verifier26            | 0x48164EcB1CB426C72DCE0421F4426daE264724a7      | 1.0.0   |
-| Verifier27            | 0x50c3B09c4b478bd88D0ED14B056AcaFb679Bd345      | 1.0.0   |
-| Verifier28            | 0xbDc6e16F514e8d8098ABc90Ab40482d5CbD7c9Aa      | 1.0.0   |
-| Verifier29            | 0x6c3Ebf4d06e9595248fA7cc506ad87CffE445dee      | 1.0.0   |
-| Verifier30            | 0x6fCe423A2fDDe6788a27a99b59e0Cb40579CE988      | 1.0.0   |
-| Verifier31            | 0xCD81D914F1032F7d4c4AB088546c7d70A438cFC3      | 1.0.0   |
-| Verifier32            | 0x9eE3cC20Eb1e6a695192A9EDB0512694d31d81bf      | 1.0.0   |
-| PoseidonT3            |                                                 | 1.0.0   |
-| ERC20Facet            |                                                 | 0.0.1   |
-| ERC721Facet           |                                                 | 0.0.1   |
-| GuardianFacet         |                                                 | 0.0.1   |
-| RecoveryFacet         |                                                 | 0.0.1   |
-| SemaphoreFacet        |                                                 | 0.0.1   |
-| SemaphoreGroupsFacet  |                                                 | 0.0.1   |
-| SemaphoreVotingFacet  |                                                 | 0.0.1   |
-| SimplicyWalletDiamond |                                                 | 0.0.1   |
-| WalletFactoryDiamond  |                                                 | 0.0.1   |
-| WalletFactoryFacet    |                                                 | 0.0.1   |
