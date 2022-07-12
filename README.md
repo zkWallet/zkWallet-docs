@@ -12,11 +12,11 @@ zkWallet Link:
 
 Guardian Registration Link:
 
-<https://guardian.simplicy.io/registration>
+<https://guardian.simplicy.io/>
 
 Guardian Recovery Link:
 
-<https://guardian.simplicy.io/>
+<https://guardian.simplicy.io/recovery>
 
 zkWallet Demo Video:
 <https://youtu.be/dmwbmxZyMyY>
